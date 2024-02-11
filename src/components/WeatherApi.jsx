@@ -133,8 +133,12 @@ const WeatherApi = () => {
             </div>
                 
           </div>
-          <Link to={'/assign2'} className='text-blue-400  pointer font-serif text-xl font-light underline md:absolute md:top-14 md:right-6 ' >
-                    <button className='bg-white font-semibold mt-7 border-none rounded-full  pl-3 pr-3' >Link to assignment 2</button>
+          <Link to={'/assign2'} className='text-black  pointer font-serif text-xl font-light underline md:absolute md:top-14 md:right-6 ' >
+          <button class="relative inline-flex items-center justify-center mb-2 me-2 hover:opacity-90 transition-all duration-200 overflow-hidden text-md font-medium rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-inherit rounded-md group-hover:bg-opacity-0">
+            Assignment 2
+          </span>
+        </button>
                 </Link>
     </div>
   )

@@ -127,7 +127,7 @@ const PieChartComponent = () => {
         >
           
           <motion.h3 className='font-bold lg:font-bold text-xl lg:text-xl '    >{state.state}</motion.h3>
-          <motion.p  className='text-white opacity-60' >{state.temperature}°C</motion.p>
+          <motion.p  className='text-white opacity-80' >{state.temperature}°C</motion.p>
           
         </motion.div>
       ))}
