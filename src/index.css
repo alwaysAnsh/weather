@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: rgb(23, 25, 26);
+  
+}
+
+
+
+
+
+.pie-div{
+  display: flex;
+}
+
+
