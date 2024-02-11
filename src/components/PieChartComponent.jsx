@@ -66,13 +66,13 @@ const PieChartComponent = () => {
         <div>
           
           {/* <motion.h2 className='text-white text-xl md:text-2xl' >Pie Chart for City Area Distribution</motion.h2> */}
-          <div className='md:w-[300px] w-[450px] bg-blue-900 p-3 text-black rounded-md' >
+          <div className='md:w-[300px] w-[300px] bg-blue-900 p-3 mx-auto text-black rounded-md' >
             <Pie data={pieData} className='text-black'  />
           </div>
         </div>
         <div>
           {/* <h2>Line Chart for City Area</h2> */}
-          <div className='md:w-[400px] w-[450px] bg-blue-900 p-3 text-black rounded-md'>
+          <div className='md:w-[400px] w-[300px] bg-blue-900 p-3 mt-6 mx-auto text-black rounded-md'>
             <Line data={lineData} />
           </div>
         </div>
@@ -99,7 +99,7 @@ const PieChartComponent = () => {
 
   return (
     <div>
-    <motion.h1 className='mb-10 mt-7 bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold font-mono uppercase  lg:uppercase lg:text-5xl lg:font-bold  text-3xl'
+    <motion.h1 className='mb-10 mt-7 bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text font-extrabold font-mono uppercase  lg:uppercase lg:text-5xl lg:font-bold  text-3xl'
       initial= {{opacity: 0.5, scale: 0.5}}
       animate={{opacity: 1, scale: 1}}
       transition={{

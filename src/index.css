@@ -5,11 +5,12 @@
 
 body{
   background-color: rgb(23, 25, 26);
-  background-image: url("https://img.freepik.com/free-photo/sun-shining-dark-clouds-green-field_181624-26064.jpg?w=996&t=st=1707651165~exp=1707651765~hmac=2b3d46095b395c2b15b80d7253e3c939e10e19d7c4caa970227a6f4860bd4643");
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the background image */
+  background-image: url("../src/assets/back.jpg");
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   
 }
 
