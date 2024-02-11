@@ -43,7 +43,7 @@ const PieChartComponent = () => {
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)'
           ],
-          borderWidth: 1
+          borderWidth: 2
         }
       ]
     };
@@ -66,13 +66,13 @@ const PieChartComponent = () => {
         <div>
           
           {/* <motion.h2 className='text-white text-xl md:text-2xl' >Pie Chart for City Area Distribution</motion.h2> */}
-          <div className='md:w-[300px] w-[450px]' >
-            <Pie data={pieData}   />
+          <div className='md:w-[300px] w-[450px] bg-blue-900 p-3 text-black rounded-md' >
+            <Pie data={pieData} className='text-black'  />
           </div>
         </div>
         <div>
           {/* <h2>Line Chart for City Area</h2> */}
-          <div className='md:w-[400px] w-[450px]'>
+          <div className='md:w-[400px] w-[450px] bg-blue-900 p-3 text-black rounded-md'>
             <Line data={lineData} />
           </div>
         </div>
@@ -99,7 +99,7 @@ const PieChartComponent = () => {
 
   return (
     <div>
-    <motion.h1 className='text-white font-bold uppercase  lg:uppercase lg:text-5xl lg:font-bold lg:text-white text-3xl'
+    <motion.h1 className='mb-10 mt-7 bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold font-mono uppercase  lg:uppercase lg:text-5xl lg:font-bold  text-3xl'
       initial= {{opacity: 0.5, scale: 0.5}}
       animate={{opacity: 1, scale: 1}}
       transition={{
@@ -121,7 +121,7 @@ const PieChartComponent = () => {
         }}
        
           key={state.state}
-          className=" cursor-pointer border-none rounded-md m-auto w-[200px] h-[100px] text-center flex flex-col justify-center items-center"
+          className=" opacity-70 cursor-pointer border-none rounded-md m-auto w-[200px] h-[100px] text-center flex flex-col justify-center items-center"
           style={{ backgroundColor: `hsl(${getHue(state.temperature)}, 100%, 50%)`, transformStyle: 'preserve-3d' }} // Adjusted background color calculation  
           onClick={() => handleStateClick(state.state)}
         >

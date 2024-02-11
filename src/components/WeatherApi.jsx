@@ -5,6 +5,7 @@ import sun from '../../src/assets/sun.png'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
+
 const WeatherApi = () => {
     const [city, setCity] = useState({})
   // const [weather, setWeather ] = useState({})
@@ -67,12 +68,12 @@ const WeatherApi = () => {
   return (
     <div className='text-white '>
         <div>
-            <img src={kloud} alt="cloud image" className='absolute bottom-0 left-0' />
+            
             <img src={sun} alt="sun image" className=' hidden md:block md:absolute md:top-0 md:right-0 md:w-28  ' />
         </div>
         
             <div>
-                <h1 className='uppercase text-white font-bold text-4xl' >weather api</h1>
+                <h1 className='uppercase  font-bold text-4xl bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text' >weather api</h1>
             </div>
                 <form onSubmit={fetchWeatherData} className='flex gap-2  mt-8 justify-center ' >
                 <div>
@@ -94,7 +95,7 @@ const WeatherApi = () => {
           
           <div className='mt-14' >
             {
-              loading ? (<div>Loading</div>): ("")
+              loading ? (<div className='font-bold text-2xl text-black' >Loading...</div>): ("")
             }
             {
               error ? (<div className='text-red-500 font-bold text-2xl uppercase' >Something went wrong</div>): ("")
@@ -112,8 +113,8 @@ const WeatherApi = () => {
                 <p className='text-xl' >Humidity - {city.humidity} g/m<sup>3</sup></p>
                 
                 <div className='flex flex-row gap-3 justify-center ' >
-                  <span className='text-green-500' >Min temp: {city.temp_min} °C</span>
-                  <span className='text-red-500' >Max temp: {city.temp_max} °C</span>
+                  <span className='text-green-500 font-semibold' >Min temp: {city.temp_min} °C</span>
+                  <span className='text-red-500 font-semibold' >Max temp: {city.temp_max} °C</span>
                 </div>
               </div> 
             }
@@ -123,7 +124,7 @@ const WeatherApi = () => {
 
           <div className='mx-auto text-center  flex ' >
                 <div className='flex mt-5 mx-auto ' >
-                <h2 className='uppercase text-yellow-500 font-semibold' >Past Searches -  </h2>
+                <h2 className='uppercase text-yellow-500 font-bold' >Past Searches -  </h2>
                 <ul >
                 {pastSearches.map((pastSearch, index) => (
                     <li key={index} className='uppercase' >{pastSearch}</li>
@@ -132,8 +133,8 @@ const WeatherApi = () => {
             </div>
                 
           </div>
-          <Link to={'/assign2'} className='text-blue-400  pointer font-serif text-sm font-light underline ' >
-                    Link to assignment 2
+          <Link to={'/assign2'} className='text-blue-400  pointer font-serif text-xl font-light underline md:absolute md:top-14 md:right-6 ' >
+                    <button className='bg-white font-semibold mt-7 border-none rounded-full  pl-3 pr-3' >Link to assignment 2</button>
                 </Link>
     </div>
   )
